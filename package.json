@@ -1,0 +1,19 @@
+{
+  "name": "json-sever",
+  "version": "1.0.0",
+  "description": "demo data",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon main.js",
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "json-sever"
+  ],
+  "author": "Quang Minh",
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "^0.16.3"
+  }
+}

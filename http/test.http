@@ -1,0 +1,30 @@
+
+
+# Cards
+# @name getAllCards
+GET http://localhost:3000/api/cards
+
+###
+# @name addCard
+POST http://localhost:3000/api/cards
+content-type: application/json
+
+{
+    "fullName": "Deana Roman",
+    "cardNumber": 1234567891212,
+    "transactions": []
+}
+
+###
+
+# @name updateCard
+PATCH http://localhost:3000/api/cards/2
+content-type: application/json
+
+{
+    "fullName": "Edit name"
+}
+
+###
+# @name deleteCard
+DELETE http://localhost:3000/api/cards/6
