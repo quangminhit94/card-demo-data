@@ -1,24 +1,29 @@
 
+@baseUrl = http://localhost:3000/api
 
 # Cards
 # @name getAllCards
-GET http://localhost:3000/api/cards
+GET {{baseUrl}}/cards
+
+###
+# with pagination
+# @name pagination
+GET {{baseUrl}}/cards?_page=1_limit=10
 
 ###
 # @name addCard
-POST http://localhost:3000/api/cards
+POST {{baseUrl}}/cards
 content-type: application/json
 
 {
     "fullName": "Deana Roman",
     "cardNumber": 1234567891212,
-    "transactions": []
 }
 
 ###
 
 # @name updateCard
-PATCH http://localhost:3000/api/cards/2
+PATCH {{baseUrl}}/cards/2
 content-type: application/json
 
 {
@@ -27,4 +32,6 @@ content-type: application/json
 
 ###
 # @name deleteCard
-DELETE http://localhost:3000/api/cards/6
+DELETE {{baseUrl}}/cards/6
+
+# Transaction

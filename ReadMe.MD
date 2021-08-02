@@ -1,3 +1,5 @@
+# Faker generate dummy data finance
+https://github.com/marak/Faker.js/
 
 # Json generator data sample
 
