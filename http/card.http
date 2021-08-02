@@ -1,18 +1,19 @@
 
 @baseUrl = http://localhost:3000/api
+@resourseName = cards
 
 # Cards
 # @name getAllCards
-GET {{baseUrl}}/cards
+GET {{baseUrl}}/{{resourseName}}
 
 ###
 # with pagination
 # @name pagination
-GET {{baseUrl}}/cards?_page=1_limit=10
+GET {{baseUrl}}/{{resourseName}}?_page=1_limit=10
 
 ###
 # @name addCard
-POST {{baseUrl}}/cards
+POST {{baseUrl}}/{{resourseName}}
 content-type: application/json
 
 {
@@ -23,7 +24,7 @@ content-type: application/json
 ###
 
 # @name updateCard
-PATCH {{baseUrl}}/cards/2
+PATCH {{baseUrl}}/{{resourseName}}/2
 content-type: application/json
 
 {
@@ -32,6 +33,6 @@ content-type: application/json
 
 ###
 # @name deleteCard
-DELETE {{baseUrl}}/cards/6
+DELETE {{baseUrl}}/{{resourseName}}/6
 
 # Transaction
